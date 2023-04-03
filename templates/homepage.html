@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}" type="text/html">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #section {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+    </style>
+    <div id="section">
+        <div class="container">
+            <h1>My Blog</h1>
+            <a href="createBlog">Create Blog</a>
+        </div>
+        {% for d in data %}
+        
+        <div class="container">
+            <ol>
+                <li>{{d.title}}</li>
+            </ol>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
