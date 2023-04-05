@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Blog
 
 def homepage (request):
+
     data=Blog.objects.all()
     context={"data": data}
     return render(request, "homepage.html", context)
