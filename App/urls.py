@@ -5,5 +5,5 @@ from App import views
 
 urlpatterns = [
     path('', views.homepage, name="homepage"),
-    path('createBlog', views.blogPage, name="blogPost")
+    path('blogPost/<id>', views.blogpostpage, name="blogPostContent")
 ] 

@@ -16,11 +16,33 @@
   </head>
   <body>
     <div class="top-container">
-      <img src="{% static 'images/reggie.jpg'%}" alt="me" />
       <h1>My Blog</h1>
     </div>
     <div class="mid-container">
-
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th>Published On</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>View Blog</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for d in data %}
+          <tr id="{{d.id}}">
+            <td>{{d.created_on}}</td>
+            <td>{{d.title}}</td>
+            <td>{{d.slug}}</td>
+            <td>{{d.author}}</td>
+            <td>{{d.status}}</td>
+            <td><a class="btn btn-primary" href="blogPost/{{d.id}}">View</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </body>
 </html>

@@ -8,8 +8,6 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 70vh;
-    border: 1px solid red;
 }
 
 .top-container h1 {
@@ -17,13 +15,17 @@ body{
 }
 
 img {
-    width: 450px;
-    height: 400px;
+    width: 150px;
+    height: 200px;
     border-radius: 50%;
 }
 
 .mid-container {
     width: 100vw;
     height: 90vh;
-    border: 1px solid blue;
+}
+
+.mid-container table {
+    width: 70%;
+    margin: 0 auto;
 }
