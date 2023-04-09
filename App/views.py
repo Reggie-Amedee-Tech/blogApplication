@@ -8,5 +8,6 @@ def homepage (request):
 
 def blogpostpage(request,id):
     data=Blog.objects.filter(id=id)
+    print(data)
     context={"data": data}
     return render(request, "blogPostContent.html", context)

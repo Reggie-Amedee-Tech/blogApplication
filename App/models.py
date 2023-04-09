@@ -15,7 +15,6 @@ class Blog(models.Model):
     content=models.TextField()
     created_on=models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=status, default=0)
-    
 
 class Meta: 
     ordering = ['-created_on']

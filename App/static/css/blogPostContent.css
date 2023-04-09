@@ -1,0 +1,44 @@
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.blog-Section {
+    width: 100vw;
+}
+
+.blog-Container {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    position: relative;
+    top: 100px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.blog-Header {
+    margin: 0 auto;
+    width: 50%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: 90px;
+}
