@@ -11,3 +11,11 @@ def blogpostpage(request,id):
     print(data)
     context={"data": data}
     return render(request, "blogPostContent.html", context)
+
+def homepage2(request):
+    data=Blog.objects.all()
+    context={"data": data}
+    return render(request, "homepage2.html", context)
+
+def aboutpage(request):
+        return render(request, "about.html")

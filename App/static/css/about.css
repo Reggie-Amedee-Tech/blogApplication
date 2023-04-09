@@ -1,0 +1,29 @@
+.content {
+    border: 1px solid red;
+    width: 100vw;
+}
+
+.container {
+    border: 1px solid blue;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.nav-wheel{
+    width: 13%;
+}
+
+.nav-wheel ol{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+#about {
+    border-right: 1px solid black;
+}
