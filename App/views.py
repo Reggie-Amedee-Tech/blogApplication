@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from .models import Blog
 
-def homepage (request):
+def blogPosts (request):
     data=Blog.objects.all()
     context={"data": data}
-    return render(request, "homepage.html", context)
+    return render(request, "blogPosts.html", context)
 
 def blogpostpage(request,id):
     data=Blog.objects.filter(id=id)
