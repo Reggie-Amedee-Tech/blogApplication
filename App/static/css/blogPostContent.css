@@ -1,3 +1,7 @@
+body {
+    background-color: #d9b99b;
+}
+
 h1 {
     margin: 0px;
     padding: 0px;
@@ -15,21 +19,23 @@ h5 {
 
 .blog-Section {
     width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .blog-Container {
     max-width: 1200px;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    height: 90%;
+    justify-content: center;
 }
 
 p {
-    position: relative;
-    top: 100px;
     width: 50%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .blog-Header {
@@ -39,6 +45,28 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: relative;
-    top: 90px;
 }
+
+.a_tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.back_tag {
+    background-color: red;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.back_tag:hover {
+    background-color: #555;
+}
+
+.back_tag:active {
+    background-color: black;
+}
+

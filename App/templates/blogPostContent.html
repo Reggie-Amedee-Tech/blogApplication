@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/blogPostContent.css' %}">
-    <title>Document</title>
+    <title>Blog</title>
 </head>
 <body>
     <div class="blog-Section">
@@ -19,6 +19,9 @@
         </div>
         <p>{{d.content | linebreaksbr}}</p>
     {% endfor %}
+</div>
+<div class="a_tag">
+    <a href="/blogPosts" class="back_tag" >Back</a>
 </div>
 </div>
 </body>

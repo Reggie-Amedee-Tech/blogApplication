@@ -1,5 +1,6 @@
-body{
-    width: 100vw;
+body {
+    background-color: #d9b99b;
+    width: 100%;
 }
 
 .top-container{
@@ -30,4 +31,27 @@ img {
     margin: 0 auto;
 }
 
+.a_tag {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.back_tag {
+    background-color: red;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.back_tag:hover {
+    background-color: #555;
+}
+
+.back_tag:active {
+    background-color: black;
+}
 

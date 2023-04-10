@@ -1,26 +1,21 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/about.css' %}" />
-    <title>Homepage</title>
-  </head>
-  <body>
+    <title>About</title>
+</head>
+<body>
     <div class="content">
-      <div class="container">
-        <h1>TEST</h1>
-        <div class="nav-wheel">
-          <ol>
-            <li id="about">About</li>
-            <li>Blog</li>
-            <li>Github</li>
-          </ol>
+    <div class="container">
+        <h1>About Me</h1>
+        <div class="picture_frame">
+        <img src="{% static 'images/reggieVimeo.jpg'%}" alt="reggie_vimeo_public_party">
         </div>
-        <div>
-          <p>
+        <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
             repellendus nemo in enim quis modi! Assumenda, placeat animi
             adipisci, eum dolores deleniti nihil voluptatum modi reprehenderit
@@ -28,9 +23,9 @@
             vero quaerat inventore eveniet aliquam reprehenderit expedita!
             Reprehenderit fugiat minus cumque cupiditate ipsam voluptas
             laboriosam a.
-          </p>
-
-          <p>
+        </p>
+        <br>
+        <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
             voluptatum quod, illum assumenda ratione nisi labore rerum deserunt
             quis ea veritatis libero quam, aspernatur deleniti, corrupti
@@ -38,9 +33,12 @@
             exercitationem dolore assumenda repellat sunt veritatis libero modi
             omnis, eius commodi, quisquam repellendus repudiandae error facere
             autem. Voluptas!
-          </p>
-        </div>
-      </div>
+        </p>
     </div>
-  </body>
+    </div>
+    <div class="a_tag">
+        <a href="/" >Back</a>
+    </div>
+    
+</body>
 </html>
