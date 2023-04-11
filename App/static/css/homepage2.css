@@ -1,13 +1,15 @@
 body {
-    background-color: #d9b99b;
+    margin: 0px;
 }
 
 .content {
     width: 100%;
+    background-color: #d9b99b;
 }
 
 .container {
     max-width: 1200px;
+    height: 93vh;
     margin: 0 auto;
 }
 
@@ -28,17 +30,18 @@ ol {
 
 li {
     list-style-type: none;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2em;
     text-align: center;
+    margin: 0px;
+    padding: 10px;
 }
 
 .picture_frame {
-    width: 35%;
-    height: 70vh;
+    width: 45%;
     margin: 0 auto;
 }
 
@@ -57,10 +60,9 @@ a:hover {
     text-decoration: underline;
 }
 
-footer {
-    margin-top: 20px;
-    background-color: #eed9c4;
+.footer {
     padding: 20px;
+    background-color: #eed9c4;
 }
 
 .footer-content {
@@ -68,4 +70,5 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     width: 55%;
+    
 }
