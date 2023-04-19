@@ -1,5 +1,5 @@
-body {
-    background-color: #d9b99b;
+/* body {
+    
 }
 
 h1 {
@@ -68,5 +68,94 @@ p {
 
 .back_tag:active {
     background-color: black;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-section {
+    background-color: grey;
+    float: right;
+    width: 100px;
+    min-height: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+
+#icon {
+    width: 90px;
+    height: 90px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.blog-content {
+    margin: 0 auto;
+    width: fit-content;
+    height: 100vh;
+}
+
+.blog-title {
+    height: 170px;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.5em;
+    width: 30em;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.a_tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.back_tag {
+    background-color: red;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.back_tag:hover {
+    background-color: #555;
+}
+
+.back_tag:active {
+    background-color: black;
+} 

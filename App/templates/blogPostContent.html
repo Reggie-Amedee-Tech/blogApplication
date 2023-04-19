@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,54 @@
     <link rel="stylesheet" href="{% static 'css/blogPostContent.css' %}">
     <title>Blog</title>
 </head>
+
 <body>
-    <div class="blog-Section">
+    <!-- <div class="blog-Section">
     <div class="blog-Container">
         {% for d in data %}
         <div class="blog-Header">
             <h1>{{d.title}}</h1>
             <h4>{{d.slug}}</h4>
-            <h5>{{d.created_on}}</h5>
+            <h5>{{d.created_on | date:"F j, Y"}}</h5>
         </div>
         <p>{{d.content | linebreaksbr}}</p>
     {% endfor %}
 </div>
 <div class="a_tag">
-    <a href="/blogPosts" class="back_tag" >Back</a>
+    <a href="/" class="back_tag" >Back</a>
 </div>
-</div>
+</div> -->
+
+    <div class="section">
+        <div class="nav-section">
+            <div class="nav">
+                <a href="" target="_blank"><img src="{% static 'images/discord.png'%}" alt="" id="icon"></a>
+                <a href="https://github.com/Reggie-Amedee-Tech" target="_blank"><img
+                        src="{% static 'images/github.png'%}" alt="" id="icon"></a>
+                <a href="https://www.linkedin.com/in/reginaldamedee/" target="_blank"><img
+                        src="{% static 'images/linkedin.png'%}" alt="" id="icon"></a>
+                <a href="https://vimeo.com/user101962084" target="_blank"><img src="{% static 'images/vimeo.png'%}"
+                        alt="" id="icon"></a>
+                <a href="https://reggiewebsite.netlify.app/" target="_blank"><img src="{% static 'images/website.png'%}"
+                        alt="" id="icon"></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="blog-content">
+                {% for d in data %}
+                <div class="blog-title">
+                    <h1>{{d.title}}</h1>
+                    <h4>{{d.created_on | date:"F j, Y"}}</h4>
+                </div>
+                <p>{{d.content | linebreaksbr}}</p>
+                {% endfor %}
+                <div class="a_tag">
+                    <a href="/" class="back_tag" >Back</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
+
 </html>

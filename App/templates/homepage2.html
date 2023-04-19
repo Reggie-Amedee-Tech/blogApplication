@@ -1,15 +1,17 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'css/homepage2.css' %}" />
-    <title>Homepage</title>
-  </head>
-  <body>
-    <div class="content">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'css/homepage2.css' %}" />
+  <title>Homepage</title>
+</head>
+
+<body>
+  <!-- <div class="content">
       <div class="container">
         <h1>My Blog</h1>
         <div class="nav-bar">
@@ -28,6 +30,45 @@
           <p>Website made with &hearts;, Python and Django</p>
           <p>&copy;Reggie-Amedee-Tech</p>
       </div>
+    </div> -->
+  <div class="section">
+    <div class="container">
+      <div class="nav-section">
+      <div class="nav">
+        <a href="" target="_blank"><img src="{% static 'images/discord.png'%}" alt="" id="icon"></a>
+        <a href="https://github.com/Reggie-Amedee-Tech" target="_blank"><img src="{% static 'images/github.png'%}" alt="" id="icon"></a>
+        <a href="https://www.linkedin.com/in/reginaldamedee/" target="_blank"><img src="{% static 'images/linkedin.png'%}" alt="" id="icon"></a>
+        <a href="https://vimeo.com/user101962084" target="_blank"><img src="{% static 'images/vimeo.png'%}" alt="" id="icon"></a>
+        <a href="https://reggiewebsite.netlify.app/" target="_blank"><img src="{% static 'images/website.png'%}" alt="" id="icon"></a>
+      </div>
     </div>
-  </body>
+      <div class="right-left-container">
+        <div class="right">
+          <div class="background-image">
+          </div>
+        </div>
+        <div class="left">
+          <div class="left-content">
+            <h1>Reginald Jean Amedee</h1>
+            <p>This is where my thoughts converge. As a technologist in the 21st century, I find myself looking at this
+              world trying to make sense of it all. An overabundance of stimuli is around us so this digital
+              space allows me to be still, if not just for a moment, and capture my thoughts. I can't tell you what kind
+              of blog this will be but I can tell you that I will speak nothing but the truth.</p>
+            <div class="blog-content">
+              {% for d in data %}
+              <div class="blog-data">
+                <h3><a href="{{d.id}}">{{d.title}}</a></h3>
+                <h4>{{d.created_on | date:"F j, Y" }}</h4>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</body>
+
 </html>
