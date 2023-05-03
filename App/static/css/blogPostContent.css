@@ -1,74 +1,3 @@
-/* body {
-    
-}
-
-h1 {
-    margin: 0px;
-    padding: 0px;
-}
-
-h4 {
-    margin: 0px;
-    padding: 0px;
-}
-
-h5 {
-    margin: 0px;
-    padding: 0px;
-}
-
-.blog-Section {
-    width: 100vw;
-    min-height: 100vh;
-    height: fit-content;
-}
-
-.blog-Container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    justify-content: center;
-}
-
-p {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.blog-Header {
-    margin: 0 auto;
-    width: 50%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.a_tag {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.back_tag {
-    background-color: red;
-    color: white;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-top: 20px;
-}
-
-.back_tag:hover {
-    background-color: #555;
-}
-
-.back_tag:active {
-    background-color: black;
-} */
 
 * {
     margin: 0px;
@@ -108,19 +37,25 @@ p {
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .blog-content {
     margin: 0 auto;
-    width: fit-content;
-    height: 100vh;
+    width: 60%;
+}
+
+.blog-container {
+    width: 70%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .blog-title {
     height: 170px;
-    width: 30em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -128,16 +63,17 @@ p {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5vw;
+    width: 20em;
 }
 
 h4 {
-    font-size: 1.8em;
+    font-size: 1.3vw;
+    width: 30em;
 }
 
 p {
-    font-size: 1.5em;
-    width: 30em;
+    font-size: 1.1vw;
     text-align: center;
     margin: 0 auto;
     letter-spacing: 0.5px;
@@ -165,3 +101,47 @@ p {
 .back_tag:active {
     background-color: black;
 } 
+
+@media screen and (max-width: 1400px) {
+
+    .blog-content {
+        width: auto;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+    }
+    
+    h4 {
+        font-size: 2.1vw;
+    }
+    
+    p {
+        font-size: 1.5vw;
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 2.7vw;
+    }
+    
+    h4 {
+        font-size: 2.4vw;
+    }
+    
+    p {
+        font-size: 2.2vw;
+
+    }
+}
+
+@media screen and (max-width: 824px) {
+
+    .blog-content {
+        position: relative;
+        right: 30px;
+    }
+}

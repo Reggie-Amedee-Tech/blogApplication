@@ -11,6 +11,7 @@
 .container {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .right-left-container {
@@ -34,15 +35,16 @@
 
 .left {
     flex: 1;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
-.left-content {
-    width: 50%;
-    margin: 0 auto;
+.left-container {
+    width: 70%;
+    height: 90%;
 }
 
 h1 {
@@ -73,9 +75,8 @@ p {
 }
 
 .nav-section {
-    float: right;
+    height: 100%;
     width: 100px;
-    min-height: 100%;
     background-color: #242424;
 }
 
@@ -103,18 +104,59 @@ a:hover {
 
 /* media queries */
 
-@media screen and (max-width: 1220px) {
-    .right-left-container {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 1124px) {
+
+    .icon {
+        width: 300px;
+        height: 300px;
     }
+
+    h1 {
+        font-size: 3vw;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 2.2vw;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    
+    h4 {
+        font-size: 2vw;
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+    
+    p {
+        font-size: 1.8vw;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
 
     .right {
-        margin-bottom: 200px;
+        flex: none;
+        height: 100px !important;
     }
 
-    .left{
+    .nav-section {
+        height: 100vh;
+    }
+
+    .right-left-container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .left {
         
+    }
+
+    .left-container {
+        height: 50%;
+        width: 60%;
     }
 
     .background-image {
@@ -129,38 +171,34 @@ a:hover {
         position: absolute;
         top: 300px;
     }
+}
 
-    #icon {
-        width: 50px !important;
-        height: 50px !important;
+@media screen and (max-width: 709px) {
+    .left-container {
+        position: relative;
+        left: 50px;
     }
 
     h1 {
-        font-size: 4vw;
+        font-size: 5vw;
         margin-bottom: 30px;
     }
     
     h3 {
-        font-size: 2.5vw;
+        font-size: 4vw;
         margin: 0px;
         margin-bottom: 10px;
     }
     
     h4 {
-        font-size: 2vw;
+        font-size: 3vw;
         margin: 0px;
         margin-bottom: 40px;
     }
     
     p {
-        font-size: 1.5vw;
+        font-size: 3.1vw;
         letter-spacing: 0.5px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .left {
-        top: 50px;
     }
 }
 

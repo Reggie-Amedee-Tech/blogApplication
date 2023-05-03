@@ -16,11 +16,13 @@ class Blog(models.Model):
     created_on=models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=status, default=0)
 
-class Meta: 
-    ordering = ['-created_on']
+    class Meta: 
+        ordering = ['-created_on']
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+        titleOfBlog=self.title
+        blogDate=str(self.created_on.strftime("%B,%-A-%d,%Y"))
+        return titleOfBlog + " - Published on: " + blogDate
 
 
 
